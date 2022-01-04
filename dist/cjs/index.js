@@ -30727,13 +30727,13 @@ var CoreComponentsPlugin = {
       ValidatePlugin: ValidatePlugin,
       ModalPlugin: ModalPlugin
     });
-    registerComponent(Vue, 'FContainer', BContainer);
-    registerComponent(Vue, 'FRow', BRow);
-    registerComponent(Vue, 'FCol', BCol);
+    registerComponent(Vue, 'GContainer', BContainer);
+    registerComponent(Vue, 'GRow', BRow);
+    registerComponent(Vue, 'GCol', BCol);
     registerComponent(Vue, 'GFormRow', BFormRow);
     registerComponent(Vue, 'GFormGroup', BFormGroup);
-    registerComponent(Vue, 'FTabs', BTabs);
-    registerComponent(Vue, 'FTab', BTab);
+    registerComponent(Vue, 'GTabs', BTabs);
+    registerComponent(Vue, 'GTab', BTab);
     registerComponents(Vue, {
       GButton: __vue_component__$f,
       GCard: __vue_component__$e,

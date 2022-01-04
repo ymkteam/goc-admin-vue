@@ -48,13 +48,13 @@ const CoreComponentsPlugin = {
 
     registerPlugins(Vue, { ValidatePlugin, ModalPlugin })
 
-    registerComponent(Vue, 'FContainer', BContainer)
-    registerComponent(Vue, 'FRow', BRow)
-    registerComponent(Vue, 'FCol', BCol)
+    registerComponent(Vue, 'GContainer', BContainer)
+    registerComponent(Vue, 'GRow', BRow)
+    registerComponent(Vue, 'GCol', BCol)
     registerComponent(Vue, 'GFormRow', BFormRow)
     registerComponent(Vue, 'GFormGroup', BFormGroup)
-    registerComponent(Vue, 'FTabs', BTabs)
-    registerComponent(Vue, 'FTab', BTab)
+    registerComponent(Vue, 'GTabs', BTabs)
+    registerComponent(Vue, 'GTab', BTab)
 
     registerComponents(Vue, {
       GButton,
@@ -71,13 +71,13 @@ const CoreComponentsPlugin = {
 export default CoreComponentsPlugin
 
 export {
-  BContainer as FContainer,
-  BRow as FRow,
-  BCol as FCol,
+  BContainer as GContainer,
+  BRow as GRow,
+  BCol as GCol,
   BFormRow as GFormRow,
   BFormGroup as GFormGroup,
-  BTabs as FTabs,
-  BTab as FTab,
+  BTabs as GTabs,
+  BTab as GTab,
   GButton,
   GCard,
   GForm,
