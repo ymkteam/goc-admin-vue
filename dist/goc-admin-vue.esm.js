@@ -1,4 +1,4 @@
-/*! Admin Dashboard v1.0.0 | MIT License | github.com/gocteam/admin-dasboard */
+/*! Admin Dashboard v1.0.2 | MIT License | github.com/gocteam/admin-dasboard */
 import Vue from 'vue';
 import require$$0 from 'jquery';
 

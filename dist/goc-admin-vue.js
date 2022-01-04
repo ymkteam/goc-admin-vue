@@ -1,4 +1,4 @@
-/*! Admin Dashboard v1.0.0 | MIT License | github.com/gocteam/admin-dasboard */
+/*! Admin Dashboard v1.0.2 | MIT License | github.com/gocteam/admin-dasboard */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('vue'), require('jquery')) :
   typeof define === 'function' && define.amd ? define(['exports', 'vue', 'jquery'], factory) :
