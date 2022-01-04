@@ -1,0 +1,77 @@
+{
+  "name": "@gocteam/goc-admin-vue",
+  "version": "1.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "unpkg": "dist/goc-admin-vue.min.js",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "build": "rimraf dist && npm run build:js && npm run build:scss",
+    "build:js": "rollup -c",
+    "build:js:watch": "rollup -c --watch",
+    "build:scss": "sass src/scss/goc-admin-vue-build.scss | node ./build/banner.js > dist/goc-admin-vue.css && cleancss -o dist/goc-admin-vue.min.css dist/goc-admin-vue.css && sass src/scss/goc-admin-vue-rtl.scss > dist/goc-admin-vue-rtl.css &&cleancss -o dist/goc-admin-vue-rtl.min.css dist/goc-admin-vue-rtl.css",
+    "build:scss:watch": "sass src/scss/goc-admin-vue-build.scss --watch && sass src/scss/goc-admin-vue-rtl.scss --watch",
+    "prepare": "husky install"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/gocteam"
+  },
+  "author": {
+    "name": "gocteam",
+    "email": "tugberkgoc@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gocteam/goc-admin-vue"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "bootstrap-table": "^1.18.3",
+    "bootstrap-vue": "^2.21.2",
+    "date-fns": "^2.22.1",
+    "firebase": "^8.7.0",
+    "font-awesome": "^4.7.0",
+    "maska": "^1.4.3",
+    "nprogress": "^0.2.0",
+    "popper.js": "^1.16.1",
+    "select2": "^4.0.7-rc.0",
+    "toastr": "^2.1.4",
+    "vee-validate": "^3.4.10",
+    "vue-form-wizard": "^0.8.4",
+    "vue-multiselect-listbox": "0.0.22",
+    "vue-recaptcha-v3": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-inject": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/eslint-config-standard": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "clean-css-cli": "^5.3.0",
+    "eslint": "^7.30.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-spellcheck": "^0.0.19",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.13.0",
+    "esm": "^3.2.25",
+    "husky": "^7.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.7",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^5.1.9",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

@@ -1,0 +1,8 @@
+@import "../../../node_modules/bootstrap-table/src/bootstrap-table.scss";
+
+.fixed-table-toolbar .bs-bars.float-left .btn {
+  border-radius: 3px !important;
+}
+.bootstrap-table .no-wrap {
+  white-space: nowrap;
+}

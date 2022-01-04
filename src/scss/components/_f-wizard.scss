@@ -1,0 +1,29 @@
+@import "../../../node_modules/vue-form-wizard/src/assets/wizard.scss";
+
+.vue-form-wizard .wizard-tab-content {
+  padding-top: 15px !important;
+}
+.wizard-nav-pills {
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid #e8ebf3 !important;
+}
+.wizard-nav-pills .tab_shape {
+  background-color: rgba(231, 220, 247) !important;
+}
+.wizard-nav-pills .active .wizard-icon-container {
+  background: #ec296b !important;
+  /* background: #ec296b !important; */
+}
+
+.wizard-nav-pills .checked {
+  border-color: #ec296b !important;
+}
+
+.wizard-progress-bar {
+  background-color: #ec296b !important;
+  color: #ec296b !important;
+}
+
+.vue-form-wizard .wizard-nav-pills li a {
+  color: rgba(0, 0, 0, 0.5) !important;
+}

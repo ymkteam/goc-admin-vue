@@ -1,0 +1,29 @@
+.dragDrop .custom-file,
+.dragDrop .custom-file-input {
+  height: 200px;
+}
+
+.dragDrop .custom-file-label {
+  border: 0;
+  border: 1px solid #acacac;
+  height: 200px;
+  line-height: 190px;
+  text-align: center;
+  padding: 0;
+  color: inherit;
+}
+
+.dragDrop .custom-file:hover .custom-file-label {
+  background: linear-gradient(
+    90deg,
+    rgba(78, 87, 98, 0.08867296918767509) 100%,
+    rgba(7, 53, 150, 1) 100%,
+    rgba(2, 0, 36, 0.500437675070028) 100%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.dragDrop .custom-file-label::after {
+  display: none;
+}

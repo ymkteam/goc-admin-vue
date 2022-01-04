@@ -1,0 +1,16 @@
+@import "../../../node_modules/vue-multiselect-listbox/src/scss/vue-multi-select-listbox.scss";
+
+.msl-searchable-list__items,
+.msl-search-list-input {
+  border: 1px solid #d1d2d4 !important;
+  border-radius: 3px !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.msl-searchable-list__item {
+  border-bottom: 1px solid #a8a9ac !important;
+}
+
+.dropdown button {
+  overflow: hidden !important;
+}
