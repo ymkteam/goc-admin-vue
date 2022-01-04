@@ -41,7 +41,7 @@ import { BForm } from 'bootstrap-vue'
 import config from '../../utils/config'
 
 export default {
-  name: 'FDatatable',
+  name: 'GDatatable',
   components: { BForm, BootstrapTable },
   props: {
     columns: {
@@ -185,7 +185,7 @@ export default {
             text: 'Export',
             icon: 'fa-download',
             event: async () => {
-              this.$flex.progress.start()
+              this.$goc.progress.start()
               const headers = {}
               this.allColumns
                 .filter(c => c.field !== 'action' && !c.checkbox && !c.radio)
@@ -199,7 +199,7 @@ export default {
                 headers
               })
               window.location.href = url
-              this.$flex.progress.done()
+              this.$goc.progress.done()
             },
             attributes: {
               title: 'Export'
@@ -222,16 +222,16 @@ export default {
         }
       }
       defaultOptions.onExportSaved = () => {
-        this.$flex.progress.start()
+        this.$goc.progress.start()
       }
 
       if (defaultOptions.pagination) {
         defaultOptions.onLoadSuccess = () => {
-          this.$flex.progress.done()
+          this.$goc.progress.done()
         }
       } else {
         defaultOptions.exportOptions.onAfterSaveToFile = () => {
-          this.$flex.progress.done()
+          this.$goc.progress.done()
         }
       }
     }
@@ -326,7 +326,7 @@ export default {
       this.$emit('update', row)
     },
     async onDelete (row) {
-      const value = await this.$flex.modal.confirm(
+      const value = await this.$goc.modal.confirm(
         this.messages.deleteConfirmMessage,
         {
           size: 'sm',

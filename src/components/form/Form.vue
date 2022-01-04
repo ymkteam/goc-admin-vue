@@ -10,7 +10,7 @@
 import { BForm } from 'bootstrap-vue'
 
 export default {
-  name: 'FForm',
+  name: 'GForm',
   components: { BForm },
   props: {
     validationDisabled: {

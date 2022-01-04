@@ -70,4 +70,4 @@ const ModalPlugin = {
 
 export default ModalPlugin
 
-export { ModalProgrammatic, Modal as FModal }
+export { ModalProgrammatic, Modal as GModal }

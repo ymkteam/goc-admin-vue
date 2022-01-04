@@ -1,4 +1,4 @@
-name: FlexAdminVue Package
+name: GocAdminVue Package
 
 on:
   push:
@@ -23,21 +23,21 @@ jobs:
         if: ${{ success() }} || ${{ failure() }}
         run: |
           echo "PACKAGE_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-      - name: Notify dedicated teams channel [SUCCESS]
-        if: ${{ success() }}
-        uses: jdcargile/ms-teams-notification@v1.3
-        with:
-          github-token: ${{ github.token }} # this will use the runner's token.
-          ms-teams-webhook-uri: ${{ secrets.GAMEFLEX_SOFTWARE_GENERAL_MS_TEAMS_WEBHOOK_URI }}
-          notification-summary: Flex Admin Vue [${{ env.PACKAGE_VERSION }}] PROD Deployed
-          notification-color: 17a2b8
-          timezone: Europa/Istanbul
-      - name: Notify dedicated teams channel [FAILED]
-        if: ${{ failure() }}
-        uses: jdcargile/ms-teams-notification@v1.3
-        with:
-          github-token: ${{ github.token }} # this will use the runner's token.
-          ms-teams-webhook-uri: ${{ secrets.GAMEFLEX_SOFTWARE_GENERAL_MS_TEAMS_WEBHOOK_URI }}
-          notification-summary: Flex Admin Vue [${{ env.PACKAGE_VERSION }}] PROD FAILED!!! 
-          notification-color: b4280a
-          timezone: Europa/Istanbul
+      # - name: Notify dedicated teams channel [SUCCESS]
+      #   if: ${{ success() }}
+      #   uses: jdcargile/ms-teams-notification@v1.3
+      #   with:
+      #     github-token: ${{ github.token }} # this will use the runner's token.
+      #     ms-teams-webhook-uri: ${{ secrets.GAMEFLEX_SOFTWARE_GENERAL_MS_TEAMS_WEBHOOK_URI }}
+      #     notification-summary: Goc Admin Vue [${{ env.PACKAGE_VERSION }}] PROD Deployed
+      #     notification-color: 17a2b8
+      #     timezone: Europa/Istanbul
+      # - name: Notify dedicated teams channel [FAILED]
+      #   if: ${{ failure() }}
+      #   uses: jdcargile/ms-teams-notification@v1.3
+      #   with:
+      #     github-token: ${{ github.token }} # this will use the runner's token.
+      #     ms-teams-webhook-uri: ${{ secrets.GAMEFLEX_SOFTWARE_GENERAL_MS_TEAMS_WEBHOOK_URI }}
+      #     notification-summary: Goc Admin Vue [${{ env.PACKAGE_VERSION }}] PROD FAILED!!! 
+      #     notification-color: b4280a
+      #     timezone: Europa/Istanbul

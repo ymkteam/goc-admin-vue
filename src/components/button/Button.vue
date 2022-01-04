@@ -26,7 +26,7 @@
 import { BButton } from 'bootstrap-vue'
 
 export default {
-  name: 'FButton',
+  name: 'GButton',
   components: {
     BButton
   },

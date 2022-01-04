@@ -43,7 +43,7 @@ import { ValidationProvider } from 'vee-validate'
 import { BFormGroup, BFormFile, BFormInvalidFeedback } from 'bootstrap-vue'
 
 export default {
-  name: 'FUpload',
+  name: 'GUpload',
   mixins: [formControl],
   components: {
     BFormGroup,

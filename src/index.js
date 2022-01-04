@@ -14,7 +14,7 @@ import { merge } from './utils/helpers'
 import config from './utils/config'
 import { registerPlugins } from './utils/plugins'
 
-const FlexAdmin = {
+const GocAdmin = {
   install (Vue, options = {}) {
     merge(config, options, { deep: true })
 
@@ -48,7 +48,7 @@ const FlexAdmin = {
   }
 }
 
-export default FlexAdmin
+export default GocAdmin
 
 // export all components as vue plugin
 export * from './components'

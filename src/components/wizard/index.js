@@ -10,4 +10,4 @@ const WizardPlugin = {
 
 export default WizardPlugin
 
-export { Wizard as FWizard }
+export { Wizard as GWizard }

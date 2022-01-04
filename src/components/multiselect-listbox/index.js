@@ -10,4 +10,4 @@ const MultiselectListboxPlugin = {
 
 export default MultiselectListboxPlugin
 
-export { MultiselectListbox as FMultiselectListbox }
+export { MultiselectListbox as GMultiselectListbox }

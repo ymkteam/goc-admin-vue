@@ -14,4 +14,4 @@ const UploadPlugin = {
 
 export default UploadPlugin
 
-export { Upload as FUpload }
+export { Upload as GUpload }

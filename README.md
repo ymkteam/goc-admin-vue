@@ -1,10 +1,10 @@
 <p align="center">
     <a href="https://gameflex.team">
-        <img src="https://github.com/gocteam/goc-admin-vue/blob/aed67e260d06290f2f783e69924ac2017bddab66/static/img/admin-vue-flex.png" width="500" />
+        <img src="https://github.com/gocteam/goc-admin-vue/blob/aed67e260d06290f2f783e69924ac2017bddab66/static/img/admin-vue-goc.png" width="500" />
     </a>
 </p>
 
-> FlexAdmin is a lightweight library of responsive UI components and plugins for [Vue.js](https://vuejs.org/).
+> GocAdmin is a lightweight library of responsive UI components and plugins for [Vue.js](https://vuejs.org/).
 
 
 # Features
@@ -16,8 +16,8 @@
 
 - [Quick start](#quick-start)
 - [Install](#install)
-- [Import and use FlexAdmin Components](#import-and-use-flexadmin-components)
-- [FlexAdminVue Plugins](#flexadminvue-plugins)
+- [Import and use GocAdmin Components](#import-and-use-GocAdmin-components)
+- [GocAdminVue Plugins](#GocAdminvue-plugins)
 
 # Quick start
 
@@ -41,14 +41,14 @@ registry=https://registry.npmjs.org/
 //npm.pkg.github.com/:_authToken=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
 ```
 
-## Import and use FlexAdmin Components
+## Import and use GocAdmin Components
 ### Using the package with all components
 ```javascript
 import Vue from 'vue'
-import FlexAdmin from '@gocteam/goc-admin-vue'
+import GocAdmin from '@gocteam/goc-admin-vue'
 import '@gocteam/goc-admin-vue/dist/goc-admin-vue.min.css'
 
-Vue.use(FlexAdmin)
+Vue.use(GocAdmin)
 ```
 
 * Config target field needs to be defined, when you want to change options for each plugin.
@@ -56,10 +56,10 @@ Vue.use(FlexAdmin)
 
 ```javascript
 import Vue from 'vue'
-import FlexAdmin from '@gocteam/goc-admin-vue'
+import GocAdmin from '@gocteam/goc-admin-vue'
 import '@gocteam/goc-admin-vue/dist/goc-admin-vue.min.css'
 
-Vue.use(FlexAdmin, {
+Vue.use(GocAdmin, {
   api: { rootUrl: '' },
   progress: { showSpinner: false }
 })
@@ -69,9 +69,9 @@ Vue.use(FlexAdmin, {
 |-------------------------------|------|
 | Directives:                         | [disable-all](https://github.com/gocteam/goc-admin-vue/blob/master/src/directives/disable-all.js) |
 | Plugins:                            | [api](#api-plugin), [firebase](#firebase-plugin), [jwt](#jwt-plugin), [notification](#notification-plugin), [progress](#progress-plugin), [recaptcha](#recaptcha-plugin), [rtl](#rtl-plugin), [validate](#validate-plugin) |
-| Prototypes ($flex.prototype)        | [config](https://github.com/gocteam/goc-admin-vue/blob/master/src/utils/config.js), [jwt](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/jwtPlugin.js), [notification](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/notificationPlugin.js), [progress](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/progressPlugin.js), [modal](https://github.com/gocteam/goc-admin-vue/blob/master/src/components/modal/index.js#L12-L61)  |
+| Prototypes ($goc.prototype)        | [config](https://github.com/gocteam/goc-admin-vue/blob/master/src/utils/config.js), [jwt](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/jwtPlugin.js), [notification](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/notificationPlugin.js), [progress](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/progressPlugin.js), [modal](https://github.com/gocteam/goc-admin-vue/blob/master/src/components/modal/index.js#L12-L61)  |
 
-Package includes these modules above. You can use above features, when you install FlexAdmin.
+Package includes these modules above. You can use above features, when you install GocAdmin.
 
 Or, You can install each plugin one by one.
 
@@ -88,18 +88,18 @@ Vue.use(ProgressPlugin, { showSpinner: false })
 Config Usage in Vue Components : 
 ```javascript
 // To get config, you can use
-this.$flex.config.datatable
-this.$flex.config.disableAll
-this.$flex.config.mask
-this.$flex.config.date
-this.$flex.config.api
-this.$flex.config.firebase
-this.$flex.config.jwt
-this.$flex.config.notification
-this.$flex.config.progress
-this.$flex.config.recaptcha
-this.$flex.config.rtl
-this.$flex.config.validate
+this.$goc.config.datatable
+this.$goc.config.disableAll
+this.$goc.config.mask
+this.$goc.config.date
+this.$goc.config.api
+this.$goc.config.firebase
+this.$goc.config.jwt
+this.$goc.config.notification
+this.$goc.config.progress
+this.$goc.config.recaptcha
+this.$goc.config.rtl
+this.$goc.config.validate
 ```
 
 ### Importing Core Components
@@ -163,7 +163,7 @@ Vue.use(CoreComponentsPlugin)
 * If you use ModalPlugin or CoreComponentsPlugin, you can use programmatic modal as below:
 
 ```javascript
- const result = await this.$flex.modal.confirm(
+ const result = await this.$goc.modal.confirm(
       'Are you sure to confirm?',
       {
         size: 'md',
@@ -179,7 +179,7 @@ if(result) {
 
 // OR
 
-this.$flex.modal.alert(
+this.$goc.modal.alert(
       'This is an alert modal.',
       {
         size: 'md',
@@ -211,10 +211,10 @@ Vue.use(ModalPlugin)
 ### or Individual Components as Exporting
 ```javascript
 import Vue from 'vue'
-import { FModal } from '@gocteam/goc-admin-vue/src/components/modal'
+import { GModal } from '@gocteam/goc-admin-vue/src/components/modal'
 import '@gocteam/goc-admin-vue/src/scss/components/_f-modal.scss'
 
-Vue.component(FModal, 'FModal')
+Vue.component(GModal, 'GModal')
 ```
 
 ## Flex Admin Plugins
@@ -285,8 +285,8 @@ This plugin uses [firebase](https://www.npmjs.com/package/nprogress). You can us
 
 Usage : 
 ```javascript
-this.$flex.progress.start()
-this.$flex.progress.done()
+this.$goc.progress.start()
+this.$goc.progress.done()
 ```
 
 ### JWT Plugin
@@ -302,11 +302,11 @@ Vue.use(JwtPlugin, {
 ```
 Usage : 
 ```javascript
-this.$flex.jwt.getToken()
-this.$flex.jwt.setToken() 
-this.$flex.jwt.getUserData()
-this.$flex.jwt.saveAuthData() 
-this.$flex.jwt.destroyAuthData()
+this.$goc.jwt.getToken()
+this.$goc.jwt.setToken() 
+this.$goc.jwt.getUserData()
+this.$goc.jwt.saveAuthData() 
+this.$goc.jwt.destroyAuthData()
 ```
 
 You can check [methods here](https://github.com/gocteam/goc-admin-vue/blob/master/src/plugins/jwtPlugin.js). 
@@ -322,10 +322,10 @@ This plugin uses [toastr](https://github.com/CodeSeven/toastr). You can use [toa
 
 Usage : 
 ```javascript
-this.$flex.notification.success('Success')
-this.$flex.notification.info('Info')
-this.$flex.notification.error('Error')
-this.$flex.notification.warning('Warning')
+this.$goc.notification.success('Success')
+this.$goc.notification.info('Info')
+this.$goc.notification.error('Error')
+this.$goc.notification.warning('Warning')
 ```
 
 ### Progress Plugin
@@ -339,8 +339,8 @@ This plugin uses [NProgress](https://www.npmjs.com/package/nprogress). You can u
 
 Usage : 
 ```javascript
-this.$flex.progress.start()
-this.$flex.progress.done()
+this.$goc.progress.start()
+this.$goc.progress.done()
 ```
 
 ### Recaptcha Plugin
@@ -402,9 +402,9 @@ Vue.use(RtlPlugin, { cssPath: '/css/goc-admin-vue-rtl.css' })
 
 Usage : 
 ```javascript
-this.$flex.rtl.isRtl
-this.$flex.rtl.enable()
-this.$flex.rtl.disable()
+this.$goc.rtl.isRtl
+this.$goc.rtl.enable()
+this.$goc.rtl.disable()
 ```
 
 ### Validate Plugin

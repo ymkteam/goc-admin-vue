@@ -10,4 +10,4 @@ const UserEditInfoPlugin = {
 
 export default UserEditInfoPlugin
 
-export { UserEditInfo as FUserEditInfo }
+export { UserEditInfo as GUserEditInfo }

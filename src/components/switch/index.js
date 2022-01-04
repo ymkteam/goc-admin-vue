@@ -10,4 +10,4 @@ const SwitchPlugin = {
 
 export default SwitchPlugin
 
-export { Switch as FSwitch }
+export { Switch as GSwitch }

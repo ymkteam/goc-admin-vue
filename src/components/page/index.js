@@ -10,4 +10,4 @@ const PagePlugin = {
 
 export default PagePlugin
 
-export { Page as FPage }
+export { Page as GPage }

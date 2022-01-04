@@ -51,7 +51,7 @@ import vMultiselectListbox from 'vue-multiselect-listbox'
 import { BFormGroup, BDropdown } from 'bootstrap-vue'
 
 export default {
-  name: 'FMultiselectListbox',
+  name: 'GMultiselectListbox',
   mixins: [formControl],
   components: {
     BDropdown,

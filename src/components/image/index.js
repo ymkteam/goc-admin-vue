@@ -4,11 +4,11 @@ import { registerComponent } from '../../utils/plugins'
 
 const ImagePlugin = {
   install (Vue) {
-    registerComponent(Vue, 'FImg', BImg)
-    registerComponent(Vue, 'FImgLazy', BImgLazy)
+    registerComponent(Vue, 'GImg', BImg)
+    registerComponent(Vue, 'GImgLazy', BImgLazy)
   }
 }
 
 export default ImagePlugin
 
-export { BImg as FImg, BImgLazy as FImgLazy }
+export { BImg as GImg, BImgLazy as GImgLazy }

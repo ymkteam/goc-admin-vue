@@ -10,4 +10,4 @@ const InputPlugin = {
 
 export default InputPlugin
 
-export { Input as FInput }
+export { Input as GInput }

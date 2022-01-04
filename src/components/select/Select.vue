@@ -36,7 +36,7 @@ import formControl from './../formControl'
 import { BFormGroup } from 'bootstrap-vue'
 
 export default {
-  name: 'FSelect',
+  name: 'GSelect',
   mixins: [formControl],
   components: { Select2, BFormGroup },
   props: {

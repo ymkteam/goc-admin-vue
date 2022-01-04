@@ -10,4 +10,4 @@ const FormPlugin = {
 
 export default FormPlugin
 
-export { Form as FForm }
+export { Form as GForm }

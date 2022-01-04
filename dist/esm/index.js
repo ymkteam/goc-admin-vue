@@ -13020,7 +13020,7 @@ var BTab = /*#__PURE__*/Vue.extend({
 //
 
 var script$g = {
-  name: 'FAlert',
+  name: 'GAlert',
   components: {
     BAlert
   },
@@ -13185,8 +13185,8 @@ var registerComponent = function registerComponent(Vue, name, def) {
   }
 };
 var registerInstanceProgrammatic = function registerInstanceProgrammatic(Vue, property, component) {
-  if (!Vue.prototype.$flex) Vue.prototype.$flex = {};
-  Vue.prototype.$flex[property] = component;
+  if (!Vue.prototype.$goc) Vue.prototype.$goc = {};
+  Vue.prototype.$goc[property] = component;
 };
 var registerPlugins = function registerPlugins(Vue) {
   var plugins = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -13219,7 +13219,7 @@ var AlertPlugin = {
 //
 
 var script$f = {
-  name: 'FButton',
+  name: 'GButton',
   components: {
     BButton
   },
@@ -13291,7 +13291,7 @@ var ButtonPlugin = {
 //
 
 var script$e = {
-  name: 'FCard',
+  name: 'GCard',
   components: { BCard },
   props: {
     header: {
@@ -17806,7 +17806,7 @@ var require$$1 = /*@__PURE__*/getAugmentedNamespace(popper);
 //
 
 var script$d = {
-  name: 'FForm',
+  name: 'GForm',
   components: { BForm },
   props: {
     validationDisabled: {
@@ -20470,7 +20470,7 @@ var numberMask = config.mask.numberMask;
 //
 
 var script$c = {
-  name: 'FInput',
+  name: 'GInput',
   mixins: [formControl],
   directives: { mask: maskDirective },
   components: {
@@ -21452,7 +21452,7 @@ var regenerator = runtime.exports;
 //
 
 var script$b = {
-  name: 'FModal',
+  name: 'GModal',
   components: { BModal },
   props: {
     submitLabel: { type: String, default: 'Save' },
@@ -21725,7 +21725,7 @@ var ModalPlugin = {
 //
 
 var script$a = {
-  name: 'FPage',
+  name: 'GPage',
   props: {
     title: {
       type: String
@@ -28042,7 +28042,7 @@ var __vue_staticRenderFns__$9 = [];
 //
 
 var script$8 = {
-  name: 'FSelect',
+  name: 'GSelect',
   mixins: [formControl],
   components: { Select2: __vue_component__$9, BFormGroup },
   props: {
@@ -28244,7 +28244,7 @@ var __vue_staticRenderFns__$8 = [];
 //
 
 var script$7 = {
-  name: 'FSelectGroup',
+  name: 'GSelectGroup',
   props: {
     parentTLabel: {
       type: String
@@ -30721,18 +30721,18 @@ var CoreComponentsPlugin = {
     registerComponent(Vue, 'FContainer', BContainer);
     registerComponent(Vue, 'FRow', BRow);
     registerComponent(Vue, 'FCol', BCol);
-    registerComponent(Vue, 'FFormRow', BFormRow);
-    registerComponent(Vue, 'FFormGroup', BFormGroup);
+    registerComponent(Vue, 'GFormRow', BFormRow);
+    registerComponent(Vue, 'GFormGroup', BFormGroup);
     registerComponent(Vue, 'FTabs', BTabs);
     registerComponent(Vue, 'FTab', BTab);
     registerComponents(Vue, {
-      FButton: __vue_component__$f,
-      FCard: __vue_component__$e,
-      FForm: __vue_component__$d,
-      FInput: __vue_component__$c,
-      FPage: __vue_component__$a,
-      FSelect: __vue_component__$8,
-      FSelectGroup: __vue_component__$7
+      GButton: __vue_component__$f,
+      GCard: __vue_component__$e,
+      GForm: __vue_component__$d,
+      GInput: __vue_component__$c,
+      GPage: __vue_component__$a,
+      GSelect: __vue_component__$8,
+      GSelectGroup: __vue_component__$7
     });
   }
 };
@@ -36047,7 +36047,7 @@ $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['tr-TR']);
 //
 
 var script$5 = {
-  name: 'FDatatable',
+  name: 'GDatatable',
   components: { BForm, BootstrapTable: __vue_component__$6 },
   props: {
     columns: {
@@ -36191,7 +36191,7 @@ var script$5 = {
             text: 'Export',
             icon: 'fa-download',
             event: async () => {
-              this.$flex.progress.start();
+              this.$goc.progress.start();
               const headers = {};
               this.allColumns
                 .filter(c => c.field !== 'action' && !c.checkbox && !c.radio)
@@ -36205,7 +36205,7 @@ var script$5 = {
                 headers
               });
               window.location.href = url;
-              this.$flex.progress.done();
+              this.$goc.progress.done();
             },
             attributes: {
               title: 'Export'
@@ -36228,16 +36228,16 @@ var script$5 = {
         }
       };
       defaultOptions.onExportSaved = () => {
-        this.$flex.progress.start();
+        this.$goc.progress.start();
       };
 
       if (defaultOptions.pagination) {
         defaultOptions.onLoadSuccess = () => {
-          this.$flex.progress.done();
+          this.$goc.progress.done();
         };
       } else {
         defaultOptions.exportOptions.onAfterSaveToFile = () => {
-          this.$flex.progress.done();
+          this.$goc.progress.done();
         };
       }
     }
@@ -36332,7 +36332,7 @@ var script$5 = {
       this.$emit('update', row);
     },
     async onDelete (row) {
-      const value = await this.$flex.modal.confirm(
+      const value = await this.$goc.modal.confirm(
         this.messages.deleteConfirmMessage,
         {
           size: 'sm',
@@ -36451,8 +36451,8 @@ var DatatablePlugin = {
 
 var ImagePlugin = {
   install: function install(Vue) {
-    registerComponent(Vue, 'FImg', BImg);
-    registerComponent(Vue, 'FImgLazy', BImgLazy);
+    registerComponent(Vue, 'GImg', BImg);
+    registerComponent(Vue, 'GImgLazy', BImgLazy);
   }
 };
 
@@ -36470,7 +36470,7 @@ var vMultiselectListbox = /*@__PURE__*/getDefaultExportFromCjs(vueMultiSelectLis
 //
 
 var script$4 = {
-  name: 'FMultiselectListbox',
+  name: 'GMultiselectListbox',
   mixins: [formControl],
   components: {
     BDropdown,
@@ -36586,7 +36586,7 @@ var MultiselectListboxPlugin = {
 //
 
 var script$3 = {
-  name: 'FSwitch',
+  name: 'GSwitch',
   mixins: [formControl],
   components: { BFormGroup, BFormCheckbox },
   props: {
@@ -36674,7 +36674,7 @@ var SwitchPlugin = {
 //
 
 var script$2 = {
-  name: 'FUpload',
+  name: 'GUpload',
   mixins: [formControl],
   components: {
     BFormGroup,
@@ -36760,7 +36760,7 @@ var UploadPlugin = {
 //
 
 var script$1 = {
-  name: 'FUserEditInfo',
+  name: 'GUserEditInfo',
   components: { BTooltip },
   props: {
     data: {
@@ -36841,7 +36841,7 @@ var vueFormWizard = {exports: {}};
 //
 
 var script = {
-  name: 'FWizard',
+  name: 'GWizard',
   mixins: [formControl],
   components: {
     VueFormWizard: vueFormWizard.exports.VueFormWizard
@@ -36993,7 +36993,7 @@ var __vue_staticRenderFns__ = [];
   /* style */
   const __vue_inject_styles__ = function (inject) {
     if (!inject) return
-    inject("data-v-89b43c5e_0", { source: ".vue-form-wizard .wizard-tab-content{padding-top:15px!important}.wizard-nav-pills{padding-bottom:40px!important;border-bottom:1px solid #e8ebf3!important}.wizard-nav-pills .tab_shape{background-color:rgba(231,220,247)!important}.wizard-nav-pills .active .wizard-icon-container{background:#ec296b!important}.wizard-nav-pills .checked{border-color:#ec296b!important}.wizard-progress-bar{background-color:#ec296b!important;color:#ec296b!important}.vue-form-wizard .wizard-nav-pills li a{color:rgba(0,0,0,.5)!important}", map: undefined, media: undefined });
+    inject("data-v-4cbfdef0_0", { source: ".vue-form-wizard .wizard-tab-content{padding-top:15px!important}.wizard-nav-pills{padding-bottom:40px!important;border-bottom:1px solid #e8ebf3!important}.wizard-nav-pills .tab_shape{background-color:rgba(231,220,247)!important}.wizard-nav-pills .active .wizard-icon-container{background:#ec296b!important}.wizard-nav-pills .checked{border-color:#ec296b!important}.wizard-progress-bar{background-color:#ec296b!important;color:#ec296b!important}.vue-form-wizard .wizard-nav-pills li a{color:rgba(0,0,0,.5)!important}", map: undefined, media: undefined });
 
   };
   /* scoped */
@@ -58613,7 +58613,7 @@ var RtlPlugin = {
   }
 };
 
-var FlexAdmin = {
+var GocAdmin = {
   install: function install(Vue) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     merge$1(config, options, {
@@ -58654,5 +58654,5 @@ var FlexAdmin = {
   }
 };
 
-export default FlexAdmin;
+export default GocAdmin;
 export { AlertPlugin, ApiPlugin, ButtonPlugin, CardPlugin, CoreComponentsPlugin, DatatablePlugin, DisableAllDirectivePlugin, FirebasePlugin, FormPlugin, ImagePlugin, InputPlugin, JwtPlugin, ModalPlugin, MultiselectListboxPlugin as MultiselectListbox, NotificationPlugin, PagePlugin, ProgressPlugin, RecaptchaPlugin, RtlPlugin, SelectPlugin, SwitchPlugin, UploadPlugin, UserEditInfoPlugin, ValidatePlugin, WizardPlugin };

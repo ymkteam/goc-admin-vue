@@ -11,4 +11,4 @@ const SelectPlugin = {
 
 export default SelectPlugin
 
-export { Select as FSelect, SelectGroup as FSelectGroup }
+export { Select as GSelect, SelectGroup as GSelectGroup }

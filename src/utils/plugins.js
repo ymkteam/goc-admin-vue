@@ -11,8 +11,8 @@ export const registerComponent = (Vue, name, def) => {
 }
 
 export const registerInstanceProgrammatic = (Vue, property, component) => {
-  if (!Vue.prototype.$flex) Vue.prototype.$flex = {}
-  Vue.prototype.$flex[property] = component
+  if (!Vue.prototype.$goc) Vue.prototype.$goc = {}
+  Vue.prototype.$goc[property] = component
 }
 
 export const registerPlugins = (Vue, plugins = {}) => {

@@ -10,4 +10,4 @@ const ButtonPlugin = {
 
 export default ButtonPlugin
 
-export { Button as FButton }
+export { Button as GButton }

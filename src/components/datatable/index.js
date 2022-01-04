@@ -14,4 +14,4 @@ const DatatablePlugin = {
 
 export default DatatablePlugin
 
-export { Datatable as FDatatable }
+export { Datatable as GDatatable }

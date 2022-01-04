@@ -10,4 +10,4 @@ const CardPlugin = {
 
 export default CardPlugin
 
-export { Card as FCard }
+export { Card as GCard }

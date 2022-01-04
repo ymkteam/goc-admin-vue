@@ -9,13 +9,13 @@ import {
   BTab
 } from 'bootstrap-vue'
 
-import { FButton } from '../button'
-import { FCard } from '../card'
-import { FForm } from '../form'
-import { FInput } from '../input'
-import ModalPlugin, { ModalProgrammatic, FModal } from '../modal'
-import { FPage } from '../page'
-import { FSelect, FSelectGroup } from '../select'
+import { GButton } from '../button'
+import { GCard } from '../card'
+import { GForm } from '../form'
+import { GInput } from '../input'
+import ModalPlugin, { ModalProgrammatic, GModal } from '../modal'
+import { GPage } from '../page'
+import { GSelect, GSelectGroup } from '../select'
 
 import {
   registerPlugins,
@@ -51,19 +51,19 @@ const CoreComponentsPlugin = {
     registerComponent(Vue, 'FContainer', BContainer)
     registerComponent(Vue, 'FRow', BRow)
     registerComponent(Vue, 'FCol', BCol)
-    registerComponent(Vue, 'FFormRow', BFormRow)
-    registerComponent(Vue, 'FFormGroup', BFormGroup)
+    registerComponent(Vue, 'GFormRow', BFormRow)
+    registerComponent(Vue, 'GFormGroup', BFormGroup)
     registerComponent(Vue, 'FTabs', BTabs)
     registerComponent(Vue, 'FTab', BTab)
 
     registerComponents(Vue, {
-      FButton,
-      FCard,
-      FForm,
-      FInput,
-      FPage,
-      FSelect,
-      FSelectGroup
+      GButton,
+      GCard,
+      GForm,
+      GInput,
+      GPage,
+      GSelect,
+      GSelectGroup
     })
   }
 }
@@ -74,17 +74,17 @@ export {
   BContainer as FContainer,
   BRow as FRow,
   BCol as FCol,
-  BFormRow as FFormRow,
-  BFormGroup as FFormGroup,
+  BFormRow as GFormRow,
+  BFormGroup as GFormGroup,
   BTabs as FTabs,
   BTab as FTab,
-  FButton,
-  FCard,
-  FForm,
-  FInput,
+  GButton,
+  GCard,
+  GForm,
+  GInput,
   ModalProgrammatic,
-  FModal,
-  FPage,
-  FSelect,
-  FSelectGroup
+  GModal,
+  GPage,
+  GSelect,
+  GSelectGroup
 }

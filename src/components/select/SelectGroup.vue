@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'FSelectGroup',
+  name: 'GSelectGroup',
   props: {
     parentTLabel: {
       type: String

@@ -43,7 +43,7 @@
 import { BModal } from 'bootstrap-vue'
 
 export default {
-  name: 'FModal',
+  name: 'GModal',
   components: { BModal },
   props: {
     submitLabel: { type: String, default: 'Save' },

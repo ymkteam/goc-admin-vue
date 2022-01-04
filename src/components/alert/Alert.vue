@@ -9,7 +9,7 @@
 import { BAlert } from 'bootstrap-vue'
 
 export default {
-  name: 'FAlert',
+  name: 'GAlert',
   components: {
     BAlert
   },

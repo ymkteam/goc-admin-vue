@@ -26,7 +26,7 @@ import { getDateTime } from '../../services/date.service'
 import { BTooltip } from 'bootstrap-vue'
 
 export default {
-  name: 'FUserEditInfo',
+  name: 'GUserEditInfo',
   components: { BTooltip },
   props: {
     data: {

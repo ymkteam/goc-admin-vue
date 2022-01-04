@@ -66,7 +66,7 @@ import formControl from './../formControl'
 import { VueFormWizard } from 'vue-form-wizard'
 
 export default {
-  name: 'FWizard',
+  name: 'GWizard',
   mixins: [formControl],
   components: {
     VueFormWizard

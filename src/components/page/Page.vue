@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: 'FPage',
+  name: 'GPage',
   props: {
     title: {
       type: String

@@ -27,7 +27,7 @@
 import { BCard } from 'bootstrap-vue'
 
 export default {
-  name: 'FCard',
+  name: 'GCard',
   components: { BCard },
   props: {
     header: {

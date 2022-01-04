@@ -10,4 +10,4 @@ const AlertPlugin = {
 
 export default AlertPlugin
 
-export { Alert as FAlert }
+export { Alert as GAlert }

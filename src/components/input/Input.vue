@@ -62,7 +62,7 @@ import {
 } from 'bootstrap-vue'
 
 export default {
-  name: 'FInput',
+  name: 'GInput',
   mixins: [formControl],
   directives: { mask: maskDirective },
   components: {

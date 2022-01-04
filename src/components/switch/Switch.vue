@@ -36,7 +36,7 @@ import formControl from './../formControl'
 import { BFormGroup, BFormCheckbox } from 'bootstrap-vue'
 
 export default {
-  name: 'FSwitch',
+  name: 'GSwitch',
   mixins: [formControl],
   components: { BFormGroup, BFormCheckbox },
   props: {
