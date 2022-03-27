@@ -1,8 +1,8 @@
-<p align="center">
-    <a href="https://gameflex.team">
-        <img src="https://github.com/gocteam/goc-admin-vue/blob/aed67e260d06290f2f783e69924ac2017bddab66/static/img/admin-vue-goc.png" width="500" />
+<!-- <p align="center">
+    <a href="">
+        <img src="" width="500" />
     </a>
-</p>
+</p> -->
 
 > GocAdmin is a lightweight library of responsive UI components and plugins for [Vue.js](https://vuejs.org/).
 
